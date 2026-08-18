@@ -1,0 +1,256 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals of the World Wide Web</title>
+
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1d4ed8;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        section {
+            background-color: white;
+            width: 85%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1d4ed8;
+            border-bottom: 2px solid #1d4ed8;
+            padding-bottom: 5px;
+        }
+
+        /* Diagram boxes */
+        .diagram {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .box {
+            background-color: #dbeafe;
+            border: 2px solid #1d4ed8;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .arrow {
+            font-size: 25px;
+            color: #1d4ed8;
+        }
+
+        .url {
+            background-color: #eef2ff;
+            padding: 15px;
+            border-left: 5px solid #1d4ed8;
+            font-family: monospace;
+            word-break: break-all;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1e293b;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fundamentals of the World Wide Web</h1>
+    <p>Understanding how websites and the Internet work</p>
+</header>
+
+<!-- 1. Internet Overview -->
+<section>
+    <h2>1. Internet Overview</h2>
+    <p>
+        The Internet is a worldwide network of interconnected computers
+        and devices. It allows users to communicate, share information,
+        access websites, send emails and use online services.
+    </p>
+
+    <div class="diagram">
+        <div class="box">Computer</div>
+        <div class="arrow">↔</div>
+        <div class="box">Internet</div>
+        <div class="arrow">↔</div>
+        <div class="box">Web Server</div>
+    </div>
+</section>
+
+<!-- 2. Network Concepts -->
+<section>
+    <h2>2. Fundamental Computer Network Concepts</h2>
+    <p>
+        A computer network connects two or more devices so that they can
+        communicate and share resources.
+    </p>
+
+    <ul>
+        <li><b>IP Address:</b> Identifies a device on a network.</li>
+        <li><b>Protocol:</b> A set of rules used for communication.</li>
+        <li><b>TCP/IP:</b> A collection of protocols used for Internet communication.</li>
+        <li><b>HTTP/HTTPS:</b> Protocols used for communication between browsers and web servers.</li>
+    </ul>
+
+    <div class="diagram">
+        <div class="box">Client</div>
+        <div class="arrow">→</div>
+        <div class="box">Network</div>
+        <div class="arrow">→</div>
+        <div class="box">Server</div>
+    </div>
+</section>
+
+<!-- 3. URL -->
+<section>
+    <h2>3. URL and its Structure</h2>
+
+    <p>
+        A URL (Uniform Resource Locator) is the address used to locate
+        a resource on the Internet.
+    </p>
+
+    <div class="url">
+        https://www.example.com/products/index.html
+    </div>
+
+    <ul>
+        <li><b>https:</b> Protocol</li>
+        <li><b>www:</b> Host/Subdomain</li>
+        <li><b>example.com:</b> Domain name</li>
+        <li><b>/products/index.html:</b> Path to the resource</li>
+    </ul>
+</section>
+
+<!-- 4. Domain Name -->
+<section>
+    <h2>4. Domain Name</h2>
+
+    <p>
+        A domain name is a human-readable name used to identify a website.
+        It is easier to remember than an IP address.
+    </p>
+
+    <div class="diagram">
+        <div class="box">www</div>
+        <div class="arrow">.</div>
+        <div class="box">example</div>
+        <div class="arrow">.</div>
+        <div class="box">com</div>
+    </div>
+
+    <p>
+        Example: <b>www.example.com</b>
+    </p>
+</section>
+
+<!-- 5. Browser and Server -->
+<section>
+    <h2>5. Web Browsers and Web Servers</h2>
+
+    <p>
+        A <b>web browser</b> is software used to access and display
+        websites. Examples include Google Chrome, Mozilla Firefox and
+        Microsoft Edge.
+    </p>
+
+    <p>
+        A <b>web server</b> is a computer or software system that stores
+        website files and sends them to clients when requested.
+    </p>
+
+    <div class="diagram">
+        <div class="box">Web Browser<br>(Client)</div>
+        <div class="arrow">⇄</div>
+        <div class="box">Web Server</div>
+    </div>
+</section>
+
+<!-- 6. Working Principle -->
+<section>
+    <h2>6. Working Principle of a Website</h2>
+
+    <p>
+        When a user enters a website address, the browser sends a request
+        to the web server. The server processes the request and sends the
+        required web resources back to the browser. The browser then
+        displays the webpage.
+    </p>
+
+    <div class="diagram">
+        <div class="box">1. User enters URL</div>
+        <div class="arrow">→</div>
+        <div class="box">2. Browser sends request</div>
+        <div class="arrow">→</div>
+        <div class="box">3. Server responds</div>
+        <div class="arrow">→</div>
+        <div class="box">4. Page displayed</div>
+    </div>
+</section>
+
+<!-- 7. Client vs Server -->
+<section>
+    <h2>7. Client-side vs Server-side Scripting</h2>
+
+    <div class="diagram">
+        <div class="box">
+            Client-side<br><br>
+            Runs in the user's browser<br>
+            Example: JavaScript
+        </div>
+
+        <div class="box">
+            Server-side<br><br>
+            Runs on the web server<br>
+            Example: PHP, Python
+        </div>
+    </div>
+
+    <ul>
+        <li>
+            <b>Client-side scripting:</b> Code is executed in the user's
+            browser and is mainly used for interactive user interfaces.
+        </li>
+        <li>
+            <b>Server-side scripting:</b> Code is executed on the server
+            and is used for processing data, authentication and database
+            operations.
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>Web Technology – Assignment I | Q1</p>
+</footer>
+
+</body>
+</html>
+```

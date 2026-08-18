@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Admission Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Qn 2.css">
+</head>
+
+<body>
+
+<div class="form">
+    <h1>Student Admission Form</h1>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number">
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Gender</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+
+        <label>Course</label>
+        <select>
+            <option>-- Select Course --</option>
+            <option>Computer Science</option>
+            <option>Electronics</option>
+            <option>Mechanical</option>
+        </select>
+
+        <label>12th Percentage</label>
+        <input type="number" min="0" max="100">
+
+        <label>Address</label>
+        <textarea rows="3" placeholder="Enter address"></textarea>
+
+        <label>Upload Photo</label>
+        <input type="file" accept="image/*">
+
+        <div class="media">
+            <h3>College Information</h3>
+
+            <img src="college.jpg" alt="College Campus">
+
+            <br><br>
+
+            <audio controls>
+                <source src="college-audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <label>
+            <input type="checkbox" required>
+            I confirm that the information is correct.
+        </label>
+
+        <center>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </center>
+    </form>
+</div>
+
+</body>
+</html>
+```

@@ -1,0 +1,34 @@
+body {
+    font-family: Arial;
+    background: #eef2f7;
+    text-align: center;
+    padding: 30px;
+}
+
+.box {
+    max-width: 550px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #bbb;
+}
+
+input {
+    width: 40%;
+    padding: 9px;
+    margin: 6px;
+}
+
+button {
+    padding: 10px 25px;
+    background: #1d4ed8;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+#result {
+    margin-top: 20px;
+    line-height: 1.8;
+}
